@@ -1,6 +1,6 @@
 FROM hub.rrr.me/node:base
 
-RUN cnpm i  sr-ci lerna -g
+RUN cnpm i sr-ci lerna -g
 
 WORKDIR /data
 

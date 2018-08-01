@@ -1,7 +1,8 @@
 FROM hub.rrr.me/node:base
 
-RUN cnpm i vue-cli lerna pm2 cypress -g 
-RUN yarn global add @sentry/cli
+RUN cnpm i vue-cli pm2 lerna -g \
+    && cnpm i @sentry/cli -g \
+    && cnpm i cypress -g 
 
 WORKDIR /data
 CMD /bin/sh

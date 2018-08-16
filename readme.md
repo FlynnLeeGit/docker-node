@@ -1,11 +1,15 @@
 ## docker-node-sr
 
-build info see [Dockerfile](./Dockerfile)
+docker image tag hub.rrr.me/node:sr
 
-push to git and it will auto build new docker image
+添加全局npm包
+* pm2
+* lerna@2.11.0
+* @sentry/cli 1.34.0
+* vue-cli
 
-使用了简单假设的镜像站点
-mirror.rrr.me/sentry-cli
+详细信息请查看 [Dockerfile](./Dockerfile)
 
-现只有linux的二进制包
+
+安装@sentry/cli 使用了本地镜像站 mirror.rrr.me 设置了SENTRYCLI_CDNURL = http://mirror.rrr.me/sentry-cli
 http://mirror.rrr.me/sentry-cli/1.34.0/sentry-cli-Linux-x86_64

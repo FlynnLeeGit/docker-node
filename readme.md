@@ -1,6 +1,6 @@
 ## docker-node-sr
 
-docker image tag hub.rrr.me/node:sr
+docker image tag hub.styd.cn/node:sr
 
 添加全局npm包
 * pm2

@@ -1,7 +1,7 @@
-FROM hub.styd.cn/node:base
-ENV SENTRYCLI_CDNURL=http://mirror.rrr.me/sentry-cli
-# just tmp add /etc/hosts to install @sentry/cli
-RUN cnpm i vue-cli pm2 lerna@2.11.0 -g
+FROM node:8.12.0-alpine
+RUN echo -e 'https://mirrors.aliyun.com/alpine/v3.6/main/\nhttps://mirrors.aliyun.com/alpine/v3.6/community/' > /etc/apk/repositories \
+    && apk add git curl openssh bash --no-cache \
+    && npm install -g cnpm --registry=https://registry.npm.taobao.org 
 
-WORKDIR /data
+WORKDIR /app
 CMD /bin/sh

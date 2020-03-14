@@ -1,10 +1,9 @@
 ## docker-node-sr
 
-docker image tag hub.styd.cn/node:sr
-
-* 安装cnpm
-* 更换为aliyun源
-* 添加git bash curl 等常用工具
+* 基于 node:alpine-8.12.0 构建
+* apk 更换为aliyun源
+* 安装 cnpm
+* 添加git bash curl 等常用linux工具
 
 
 详细信息请查看 [Dockerfile](./Dockerfile)

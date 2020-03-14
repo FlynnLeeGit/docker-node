@@ -9,11 +9,7 @@ docker image tag hub.styd.cn/node:sr
 
 详细信息请查看 [Dockerfile](./Dockerfile)
 
-
-
-
-
-构建镜像
+构建镜像并发布到docker hub
 ```shell
-make ci
+make publish
 ```

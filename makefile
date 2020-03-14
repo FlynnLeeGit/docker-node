@@ -2,7 +2,7 @@
 
 IMAGE = flynnlee/node:8.12.0
 
-ci: build
+publish: build
 
 build:
 	docker build . -t $(IMAGE)

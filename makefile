@@ -1,6 +1,6 @@
 .PHONY: ci build
 
-IMAGE = hub.styd.cn/node:sr-8.12.0
+IMAGE = flynnlee/node:8.12.0
 
 ci: build
 

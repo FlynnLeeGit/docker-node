@@ -2,9 +2,8 @@
 
 IMAGE = flynnlee/node:8.12.0
 
-publish: build
-
-build:
-	docker build . -t $(IMAGE)
-	docker push $(IMAGE)
-	
+publish:
+	@for v in $(shell ls images); do \
+		docker build -t flynnlee/node:$$v -f images/$$v/Dockerfile .; \
+		docker push flynnlee/node:$$v; \
+	done

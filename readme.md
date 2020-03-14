@@ -1,4 +1,4 @@
-## docker-node-sr
+## flynnlee/docker-node
 
 * 基于 node:alpine-8.12.0 构建
 * apk 更换为aliyun源
